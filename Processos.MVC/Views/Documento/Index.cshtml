@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Processos.MVC.ViewModel.DocumentoViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="btn-container">
+    <div>
+        <a class="btn btn-black btn-container" href="Documento/Create"><i class="material-icons left">add_box</i>Novo Documento</a>
+    </div>
+</div>
+
+<h2 class="center-align">Lista de Documentos</h2>
+
+@using (Html.BeginForm("Index", "Documento", FormMethod.Get))
+{
+    <table class="striped responsive-table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayName("Código")</th>
+                <th>@Html.DisplayName("Título")</th>
+                <th>@Html.DisplayName("Categoria")</th>
+                <th>@Html.DisplayName("Tipo Processo")</th>
+                <th>@Html.DisplayName("Arquivo")</th>
+             </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Categoria)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TipoProcesso.Name)</td>
+                    <td>@Html.ActionLink("Baixar Arquivo", "Download", "Documento", routeValues: new {path = item.CaminhoArquivo},new { @class = "btn btn-primary"})</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

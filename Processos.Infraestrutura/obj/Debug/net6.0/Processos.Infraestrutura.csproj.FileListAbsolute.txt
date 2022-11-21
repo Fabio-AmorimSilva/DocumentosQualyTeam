@@ -1,0 +1,15 @@
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\bin\Debug\net6.0\Processos.Infraestrutura.deps.json
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\bin\Debug\net6.0\Processos.Infraestrutura.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\bin\Debug\net6.0\Processos.Infraestrutura.pdb
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\bin\Debug\net6.0\Processos.Dominio.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\bin\Debug\net6.0\Processos.Dominio.pdb
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\Processos.Infraestrutura.csproj.AssemblyReference.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\Processos.Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\Processos.Infraestrutura.AssemblyInfoInputs.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\Processos.Infraestrutura.AssemblyInfo.cs
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\Processos.Infraestrutura.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\Processos.Infraestrutura.csproj.CopyComplete
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\Processos.Infraestrutura.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\refint\Processos.Infraestrutura.dll
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\Processos.Infraestrutura.pdb
+C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.Infraestrutura\obj\Debug\net6.0\ref\Processos.Infraestrutura.dll

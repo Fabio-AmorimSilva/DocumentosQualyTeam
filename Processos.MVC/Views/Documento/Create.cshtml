@@ -1,0 +1,54 @@
+﻿@model Processos.MVC.ViewModel.DocumentoFormViewModel
+
+@{
+    ViewData["Title"] = "Cria Documento";
+}
+
+@section Styles {
+  <link href='@Url.Content("~/css/DocumentoForm.css")' rel="stylesheet" type="text/css" />
+}
+
+<h2 class="center-align">Formulário para cadastro de Documento</h2>
+
+@using (Html.BeginForm("Create", "Documento", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="d-flex justify-content-center">
+        <div class="form-group form-container col-5 center-align">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.LabelFor(model => model.Titulo, htmlAttributes: new { @class = "control-label center-align" })
+            <div class="center-align">
+                @Html.TextBoxFor(model => model.Titulo, new { @placeholder = "Insira o título aqui", @class = "center-align"})
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Categoria, htmlAttributes: new { @class = "control-label center-align" })
+                <div class="center-align">
+                    @Html.TextBoxFor(model => model.Categoria, new { @placeholder = "Insira a categoria aqui", @class = "center-align" })
+                    @Html.ValidationMessageFor(model => model.Categoria, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <input type="file" name="file" />
+            
+            <div class="form-group">
+                @Html.DropDownListFor(model => model.IdTipoProcesso, (SelectList)ViewBag.TipoProcessos, htmlAttributes: new { @class = "tipo-processo" })
+                @Html.LabelFor(model => model.IdTipoProcesso)
+                @Html.ValidationMessageFor(model => model.IdTipoProcesso)
+            </div>
+
+            <div class="form-group">
+                <div class="center-align">
+                    <input type="submit" value="Criar Documento" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+ }
