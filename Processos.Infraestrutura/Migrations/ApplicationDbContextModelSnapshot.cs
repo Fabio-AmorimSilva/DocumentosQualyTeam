@@ -37,6 +37,9 @@ namespace Processos.Infraestrutura.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
+                    b.Property<int>("Codigo")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CriadoEm")
                         .HasColumnType("datetime(6)");
 

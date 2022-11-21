@@ -11,6 +11,9 @@ namespace Processos.Infraestrutura.Mappings
         {
             base.Configure(builder);
 
+            builder.Property(d => d.Codigo)
+                .IsRequired();
+
             builder.Property(d => d.Titulo)
                 .HasMaxLength(100)
                 .IsRequired();

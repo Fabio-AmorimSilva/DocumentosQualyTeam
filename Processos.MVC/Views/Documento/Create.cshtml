@@ -17,10 +17,18 @@
     <div class="d-flex justify-content-center">
         <div class="form-group form-container col-5 center-align">
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            @Html.LabelFor(model => model.Titulo, htmlAttributes: new { @class = "control-label center-align" })
+            @Html.LabelFor(model => model.Codigo, htmlAttributes: new { @class = "control-label center-align" })
             <div class="center-align">
-                @Html.TextBoxFor(model => model.Titulo, new { @placeholder = "Insira o título aqui", @class = "center-align"})
-                @Html.ValidationMessageFor(model => model.Titulo, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(model => model.Codigo, new { @placeholder = "Insira o código aqui", @class = "center-align"})
+                @Html.ValidationMessageFor(model => model.Codigo, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Titulo, htmlAttributes: new { @class = "control-label center-align" })
+                <div class="center-align">
+                    @Html.TextBoxFor(model => model.Titulo, new { @placeholder = "Insira o títul aqui", @class = "center-align" })
+                    @Html.ValidationMessageFor(model => model.Titulo, "", new { @class = "text-danger" })
+                </div>
             </div>
 
             <div class="form-group">

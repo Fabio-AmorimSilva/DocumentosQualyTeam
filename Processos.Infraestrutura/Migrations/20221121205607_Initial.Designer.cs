@@ -11,7 +11,7 @@ using Processos.Infraestrutura.Context;
 namespace Processos.Infraestrutura.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221118211309_Initial")]
+    [Migration("20221121205607_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,6 +38,9 @@ namespace Processos.Infraestrutura.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
+
+                    b.Property<int>("Codigo")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CriadoEm")
                         .HasColumnType("datetime(6)");

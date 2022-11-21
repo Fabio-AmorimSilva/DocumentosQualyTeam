@@ -5,7 +5,8 @@ using Processos.Dominio.Core;
 namespace Processos.Aplicacao.ViewModels.Documento
 {
     public class DocumentoResponse : Registro
-    {
+    { 
+        public int Codigo { get; set; }
         public string Titulo { get; set; }
         public string Categoria { get; set; }
         public string CaminhoArquivo { get; set; }

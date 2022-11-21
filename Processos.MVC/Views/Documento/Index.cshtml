@@ -17,6 +17,7 @@
     <table class="striped responsive-table">
         <thead>
             <tr>
+                <th>@Html.DisplayName("Id")</th>
                 <th>@Html.DisplayName("Código")</th>
                 <th>@Html.DisplayName("Título")</th>
                 <th>@Html.DisplayName("Categoria")</th>
@@ -29,6 +30,7 @@
             {
                 <tr>
                     <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Codigo)</td>
                     <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
                     <td>@Html.DisplayFor(modelItem => item.Categoria)</td>
                     <td>@Html.DisplayFor(modelItem => item.TipoProcesso.Name)</td>
