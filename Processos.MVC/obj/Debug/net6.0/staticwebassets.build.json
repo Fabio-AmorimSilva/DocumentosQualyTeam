@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m9T8GMqfRFdG+4Sn/+eAErlKrqqGXhMf/kAxDbADO4c=",
+  "Hash": "Qq1QnbfK+3FpBrZmRJ0hQjfiG1PvIRSL8HH2VythWds=",
   "Source": "Processos.MVC",
   "BasePath": "_content/Processos.MVC",
   "Mode": "Default",
@@ -1273,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Processo extensão teste\\prova.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Fabio\\Documents\\Linguagens de Programação\\TestesTecnicos\\QualyTeam\\TesteQualyTeam\\TesteQualyteam\\Processos.MVC\\wwwroot\\Processo\\Currículo-FabioAmorimdaSilva.pdf",
+      "SourceId": "Processos.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fabio\\Documents\\Linguagens de Programação\\TestesTecnicos\\QualyTeam\\TesteQualyTeam\\TesteQualyteam\\Processos.MVC\\wwwroot\\",
+      "BasePath": "_content/Processos.MVC",
+      "RelativePath": "Processo/Currículo-FabioAmorimdaSilva.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Processo\\Currículo-FabioAmorimdaSilva.pdf"
     },
     {
       "Identity": "C:\\Users\\Fabio\\Documents\\Linguagens de Programação\\TestesTecnicos\\QualyTeam\\TesteQualyTeam\\TesteQualyteam\\Processos.MVC\\wwwroot\\prova.JPG",

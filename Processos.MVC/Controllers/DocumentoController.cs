@@ -63,10 +63,22 @@ namespace Processos.MVC.Controllers
         [HttpPost]
         public async Task<ActionResult> Create(DocumentoFormViewModel documento, IFormFile file)
         {
+
+            if (file == null)
+            {
+                _notyf.Error("Arquivo não fornecido", 5);
+                await SetTiposProcessos();
+                return View(documento);
+            }
+
             var extesionFile = Path.GetExtension(file.FileName);
 
             if (!FileTypes.FileTyles.Contains(extesionFile))
-               return Content("O formato do arquivo deve ser [.pdf, .doc, .docx, .xlsx]");
+            {
+                _notyf.Error("O formato do arquivo deve ser [.pdf, .doc, .docx, .xlsx]");
+                await SetTiposProcessos();
+                return View(documento);
+            }
 
             var path = await Upload(file, documento.Titulo);
 

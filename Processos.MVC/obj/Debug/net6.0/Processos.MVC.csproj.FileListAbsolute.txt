@@ -243,5 +243,4 @@ C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\Te
 C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.MVC\bin\Debug\net6.0\AspNetCoreHero.ToastNotification.Views.dll
 C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.MVC\bin\Debug\net6.0\AspNetCoreHero.ToastNotification.dll
 C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.MVC\obj\Debug\net6.0\Processos.MVC.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.MVC\bin\Debug\net6.0\AutoMapper.Collection.dll
 C:\Users\Fabio\Documents\Linguagens de Programação\TestesTecnicos\QualyTeam\TesteQualyTeam\TesteQualyteam\Processos.MVC\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

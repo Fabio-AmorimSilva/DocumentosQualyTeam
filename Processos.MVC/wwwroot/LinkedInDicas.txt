@@ -1,5 +1,0 @@
-- Capa que fale do perfil
-- Foto do busto para cima com fundo branco
-- Publicação em destaque
-- Resumo colocar background técnico, tecnologias que utilizou e o que está atualmente estudando
-  - Colocar coisas que tiveram mais notoriedade na carreira acadêmica ou profissional
