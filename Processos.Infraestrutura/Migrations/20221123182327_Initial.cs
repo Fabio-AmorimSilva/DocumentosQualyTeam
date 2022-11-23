@@ -28,6 +28,30 @@ namespace Processos.Infraestrutura.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
+                name: "Categorias",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    IdTipoProcesso = table.Column<int>(type: "int", nullable: false),
+                    CriadoEm = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    AtualizadoEm = table.Column<DateTime>(type: "datetime(6)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categorias", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Categorias_TipoProcessos_IdTipoProcesso",
+                        column: x => x.IdTipoProcesso,
+                        principalTable: "TipoProcessos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
                 name: "Documentos",
                 columns: table => new
                 {
@@ -69,6 +93,16 @@ namespace Processos.Infraestrutura.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Categorias_Id",
+                table: "Categorias",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Categorias_IdTipoProcesso",
+                table: "Categorias",
+                column: "IdTipoProcesso");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Documentos_Id",
                 table: "Documentos",
                 column: "Id");
@@ -81,6 +115,9 @@ namespace Processos.Infraestrutura.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Categorias");
+
             migrationBuilder.DropTable(
                 name: "Documentos");
 

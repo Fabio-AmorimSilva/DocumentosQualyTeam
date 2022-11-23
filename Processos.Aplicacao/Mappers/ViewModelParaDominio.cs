@@ -1,5 +1,6 @@
 ﻿
 using AutoMapper;
+using Processos.Aplicacao.ViewModels.Categoria;
 using Processos.Aplicacao.ViewModels.Documento;
 using Processos.Dominio.Models;
 
@@ -10,6 +11,7 @@ namespace Processos.Aplicacao.Mappers
         public ViewModelParaDominio()
         {
             CreateMap<DocumentoRequest, Documento>();
+            CreateMap<CategoriaRequest, Categoria>();
         }
     }
 }

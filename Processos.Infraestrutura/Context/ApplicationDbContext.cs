@@ -10,6 +10,7 @@ namespace Processos.Infraestrutura.Context
     public class ApplicationDbContext : DbContext
     {
         public DbSet<Documento> Documentos { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
         public DbSet<TipoProcesso> TipoProcessos { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options) { }

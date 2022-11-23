@@ -11,7 +11,7 @@ using Processos.Infraestrutura.Context;
 namespace Processos.Infraestrutura.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221121205607_Initial")]
+    [Migration("20221123182327_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,6 +20,34 @@ namespace Processos.Infraestrutura.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
+
+            modelBuilder.Entity("Processos.Dominio.Models.Categoria", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("AtualizadoEm")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("IdTipoProcesso")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("IdTipoProcesso");
+
+                    b.ToTable("Categorias");
+                });
 
             modelBuilder.Entity("Processos.Dominio.Models.Documento", b =>
                 {
@@ -102,6 +130,17 @@ namespace Processos.Infraestrutura.Migrations
                             Id = 5,
                             Name = "P5"
                         });
+                });
+
+            modelBuilder.Entity("Processos.Dominio.Models.Categoria", b =>
+                {
+                    b.HasOne("Processos.Dominio.Models.Enumerations.TipoProcesso", "TipoProcesso")
+                        .WithMany()
+                        .HasForeignKey("IdTipoProcesso")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("TipoProcesso");
                 });
 
             modelBuilder.Entity("Processos.Dominio.Models.Documento", b =>

@@ -23,12 +23,13 @@ namespace Processos.API.Configuration
 
             //repositories
             service.AddScoped<IDocumentoRepository, DocumentoRepository<Documento>>();
-            
+            service.AddScoped<ICategoriaRepository, CategoriaRepository<Categoria>>();            
             //options
             service.Configure<Aplicacao.Options.FileSettings>(configuration.GetSection("FileSettings"));
             
             //services
             service.AddScoped<IDocumentoService, DocumentoService>();
+            service.AddScoped<ICategoriaService, CategoriaService>();
 
             //uow
             service.AddScoped<IUnitOfWork, UnitOfWork>();

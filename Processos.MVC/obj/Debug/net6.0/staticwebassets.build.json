@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vxP4KnMCrZSHzcG9YK2FkL34pOU984ZrsBht/FhkDb8=",
+  "Hash": "ZRflSP0Jfwp+g32nZN+InpjCE1ddoOCuG6GBirxLKOE=",
   "Source": "Processos.MVC",
   "BasePath": "_content/Processos.MVC",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Fabio\\Documents\\Linguagens de Programação\\TestesTecnicos\\QualyTeam\\TesteQualyTeam\\TesteQualyteam\\Processos.MVC\\wwwroot\\Etapa 1 - Teste técnico - Cadastro de Documentos.pdf",
+      "SourceId": "Processos.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fabio\\Documents\\Linguagens de Programação\\TestesTecnicos\\QualyTeam\\TesteQualyTeam\\TesteQualyteam\\Processos.MVC\\wwwroot\\",
+      "BasePath": "_content/Processos.MVC",
+      "RelativePath": "Etapa 1 - Teste técnico - Cadastro de Documentos.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Etapa 1 - Teste técnico - Cadastro de Documentos.pdf"
     },
     {
       "Identity": "C:\\Users\\Fabio\\Documents\\Linguagens de Programação\\TestesTecnicos\\QualyTeam\\TesteQualyTeam\\TesteQualyteam\\Processos.MVC\\wwwroot\\favicon.ico",
@@ -1154,23 +1171,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
-    },
-    {
-      "Identity": "C:\\Users\\Fabio\\Documents\\Linguagens de Programação\\TestesTecnicos\\QualyTeam\\TesteQualyTeam\\TesteQualyteam\\Processos.MVC\\wwwroot\\Processo\\Currículo-FabioAmorimdaSilva.pdf",
-      "SourceId": "Processos.MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Fabio\\Documents\\Linguagens de Programação\\TestesTecnicos\\QualyTeam\\TesteQualyTeam\\TesteQualyteam\\Processos.MVC\\wwwroot\\",
-      "BasePath": "_content/Processos.MVC",
-      "RelativePath": "Processo/Currículo-FabioAmorimdaSilva.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Processo\\Currículo-FabioAmorimdaSilva.pdf"
     }
   ]
 }
